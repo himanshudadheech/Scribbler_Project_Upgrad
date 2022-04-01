@@ -7,7 +7,8 @@ function addComments(id) {
 }
 var numberOfClicks = 0;
 function postLiked() {
-  document.getElementById("likeBlog").innerHTML = "Liked!";
+  document.getElementById("likeBlog").innerHTML =
+    `<i class="fa fa-thumbs-up" aria-hidden="true"></i>` + " Liked!";
   numberOfClicks += 1;
   if (numberOfClicks != 0) {
     if (numberOfClicks == 1) {
