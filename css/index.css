@@ -32,7 +32,8 @@ html {
 }
 #navbarNav {
   float: right;
+  margin-top: 10px;
 }
 .modal-font {
-  font-family: "Lato";
+  font-family: "Josefin Sans";
 }
