@@ -2,94 +2,85 @@
   margin: 0;
   padding: 0;
 }
+
 body,
 html {
   height: 100%;
   margin: 0;
 }
-.bg {
-  /* The image used */
-  background-color: rgb(255, 187, 0);
 
-  /* Full height */
+.bg {
+  background-color: rgb(255, 187, 0);
   height: 100%;
   overflow: hidden;
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.logo-title {
-  float: left;
-  font-family: "Satisfy";
-}
-.centre-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+
+.postContainer {
   height: 100%;
-}
-#navbarNav {
-  float: right;    margin-top: 10px;
-}
-.modal-font {
-  font-family: "Josefin Sans";
-}
-.cardstyle {
-  background-color: rgb(213, 209, 209);
-  margin-left: 15px;
-  border-radius: 15px;
-  width: 600px;
-  height: 180px;
+  width: 100%;
 }
 
-.main_card {
+.singlePost {
+  position: relative;
+  width: 45%;
+  background: #fff;
+  margin: 10px 10px 10px 20px;
+  float: left;
+  border-radius: 15px;
 }
-.username {
-  margin-top: 85px;
-  font-family: Verdana, sans-serif, bold;
-  font-size: 15px;
+
+.singlePostleft {
+  width: 15%;
+  height: 18%;
+  max-width: 15%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  color: #000;
 }
-.username_block {
-  background-color: white;
-  height: 180px;
-  border-radius: 15px 0px 0px 15px;
+
+.singlePostright {
+  width: 75%;
+  display: table-cell;
+  text-align: left;
+  background-color: #e8e8e8;
+  color: #000000;
+  border-radius: 0 15px 15px 0;
+  padding: 0 20px;
+  overflow: hidden;
 }
-.titlestyle {
+
+.SinglePosttitle {
   font-family: "Itim", cursive;
   font-weight: bold;
   color: #2b312b;
-  font-size: 18px;
-}
-.bodystyle {
-  text-align: left;
-  font-size: 15px;
-  color: #000000;
-
-  overflow: hidden;
-}
-/* Flex */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  text-align: left;margin-left: 10%;
+  font-size: 25px;
+  height: 25px;
+  margin-top: 25px;
 }
 
-.flex-item-left {
-  flex: 50%;
+.SinglePostdesc {
+  height: 100px;
+  margin-bottom: 0 !important;
 }
 
-.flex-item-right {
-  flex: 50%;
+.delete_icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
 }
 
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media (max-width: 800px) {
-  .flex-item-right,
-  .flex-item-left {
-    flex: 100%;
-  }
+.dot_icon {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+
+.delete_icon img {
+  height: 30px;
+  width: 30px;
 }
