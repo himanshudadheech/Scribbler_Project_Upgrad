@@ -2,38 +2,18 @@
   margin: 0;
   padding: 0;
 }
+
 body,
 html {
   height: 100%;
   margin: 0;
 }
-.bg {
-  /* The image used */
-  background-image: url("/images/background.jpg");
 
-  /* Full height */
+.bg {
+  background-image: url("/images/background.jpg");
   height: 100%;
   overflow: hidden;
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.logo-title {
-  float: left;
-  font-family: "Satisfy";
-}
-.centre-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100%;
-}
-#navbarNav {
-  float: right;
-  margin-top: 10px;
-}
-.modal-font {
-  font-family: "Josefin Sans";
 }

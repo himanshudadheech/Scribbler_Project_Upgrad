@@ -1,79 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
 
-    <!-- TODO: Include Google Fonts file here -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Satisfy"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.google.com/specimen/Josefin+Sans"
-      rel="stylesheet"
-    />
+<head>
+  <!-- TODO: Include Font Awesome file here -->
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
 
-    <!-- Include Css File  -->
-    <link rel="stylesheet" href="/css/bloglist.css" />
-    <!-- Script File -->
-    <script src="/scripts/bloglist.js"></script>
+  <!-- TODO: Include Google Fonts file here -->
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+  <link href="https://fonts.google.com/specimen/Josefin+Sans" rel="stylesheet" />
 
-    <!-- bootstrap script -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </head>
-  <body>
+  <!-- Include Css File  -->
+  <link rel="stylesheet" href="/css/bloglist.css" />
+  <link rel="stylesheet" href="/css/header.css" />
+  <!-- Script File -->
+  <script src="/scripts/bloglist.js"></script>
+
+  <!-- bootstrap script -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- Header Part -->
+  <div class="bg">
     <!-- Header Part -->
-    <div class="bg">
-      <!-- Header Part -->
+    <div>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <div class="logo-title">
-            <span
-              class="navbar-brand"
-              style="font-size: 36px; float: left; color: blue"
-              >ScriBBler</span
-            >
+            <span class="navbar-brand">ScriBBler</span>
             <br />
-            <span style="font-size: 14px; float: left; color: white"
-              >Explore Imagine Create</span
-            >
+            <span class="logo-tag" style="color: white">Explore Imagine Create</span>
           </div>
 
           <div class="justify-content-end" id="navbarNav">
-            <button
-              type="button"
-              class="btn"
-              style="color: white; background-color: blue"
-              data-toggle="modal"
-              data-target="#signinModal"
-              data-backdrop="static"
-              data-keyboard="false"
-            >
+            <button type="button" class="btn" style="color: white; background-color: blue" data-toggle="modal"
+              data-target="#signinModal" data-backdrop="static" data-keyboard="false">
               Sign In
             </button>
 
-            <button
-              type="button"
-              class="btn"
-              style="color: white; background-color: blue"
-              data-toggle="modal"
-              data-target="#signupModal"
-              data-backdrop="static"
-              data-keyboard="false"
-            >
+            <button type="button" class="btn" style="color: white; background-color: blue" data-toggle="modal"
+              data-target="#signupModal" data-backdrop="static" data-keyboard="false">
               Sign Up
             </button>
           </div>
@@ -91,58 +60,36 @@
               <button type="button" class="close" data-dismiss="modal">
                 &times;
               </button>
-              <h2 class="modal-title text-center modal-font">Welcome Back!</h2>
+              <h2 class="modal-title text-center modal-font">
+                Welcome Back!
+              </h2>
               <hr />
 
               <div class="modal-body">
                 <form style="margin: 15px">
                   <div class="form-group" style="font-family: Josefin Sans">
                     <label for="exampleInputEmail1 ">Username</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleInputEmail1"
-                      style="background-color: rgb(223, 215, 215)"
-                      aria-describedby="emailHelp"
-                      placeholder="Enter Username"
-                    />
+                    <input type="text" class="form-control" id="exampleInputloginEmail1" required="true"
+                      style="background-color: rgb(223, 215, 215)" aria-describedby="emailHelp"
+                      placeholder="Enter Username" />
                   </div>
                   <div class="form-group" style="font-family: Josefin Sans">
                     <label for="exampleInputPassword1">Password</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="exampleInputPassword1"
-                      style="
-                        background-color: rgb(223, 215, 215);
-                        font-family: Josefin Sans;
-                      "
-                      placeholder="Enter Password"
-                    />
+                    <input type="password" class="form-control" id="exampleInputloginPassword" required="true" style="
+                          background-color: rgb(223, 215, 215);
+                          font-family: Josefin Sans;
+                        " placeholder="Enter Password" />
                   </div>
 
-                  <button
-                    type="submit"
-                    class="btn btn-default btn-block"
-                    style="background-color: #0ec038; color: white"
-                    data-dismiss="modal"
-                  >
+                  <button type="submit" class="btn btn-default btn-block"
+                    style="background-color: #0ec038; color: white">
                     Sign In
                   </button>
                   <div>
-                    <h4
-                      class="text-center"
-                      style="padding: 5px; font-family: Josefin Sans"
-                    >
+                    <h4 class="text-center" style="padding: 5px; font-family: Josefin Sans">
                       Not a member?
-                      <span
-                        style="color: blue"
-                        data-toggle="modal"
-                        data-target="#signupModal"
-                        data-backdrop="static"
-                        data-keyboard="false"
-                        >Sign Up</span
-                      >
+                      <span style="color: blue" data-toggle="modal" data-target="#signupModal" data-backdrop="static"
+                        data-keyboard="false">Sign Up</span>
                     </h4>
                   </div>
                 </form>
@@ -170,53 +117,29 @@
                 <form style="margin: 15px">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Full Name</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleInputEmail1"
-                      style="background-color: rgb(223, 215, 215)"
-                      aria-describedby="emailHelp"
-                      placeholder="Enter Full Name"
-                    />
+                    <input type="text" class="form-control" id="exampleInputName" required="true"
+                      style="background-color: rgb(223, 215, 215)" aria-describedby="emailHelp"
+                      placeholder="Enter Full Name" />
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1">Username</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleInputEmail1"
-                      style="background-color: rgb(223, 215, 215)"
-                      aria-describedby="emailHelp"
-                      placeholder="Enter Username"
-                    />
+                    <input type="text" class="form-control" id="exampleInputEmail" required="true"
+                      style="background-color: rgb(223, 215, 215)" aria-describedby="emailHelp"
+                      placeholder="Enter Username" />
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="exampleInputPassword1"
-                      style="background-color: rgb(223, 215, 215)"
-                      placeholder="Enter Password"
-                    />
+                    <input type="password" class="form-control" id="exampleInputPassword" required="true"
+                      style="background-color: rgb(223, 215, 215)" placeholder="Enter Password" />
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Confirm Password</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="exampleInputPassword1"
-                      style="background-color: rgb(223, 215, 215)"
-                      placeholder="Confirm Password"
-                    />
+                    <input type="password" class="form-control" id="exampleInputcPassword" required="true"
+                      style="background-color: rgb(223, 215, 215)" placeholder="Confirm Password" />
                   </div>
 
-                  <button
-                    type="submit"
-                    class="btn btn-default btn-block"
-                    style="background-color: #0ec038; color: white"
-                    data-dismiss="modal"
-                  >
+                  <button type="submit" class="btn btn-default btn-block" required="true"
+                    style="background-color: #0ec038; color: white">
                     Sign Up
                   </button>
                 </form>
@@ -225,307 +148,123 @@
           </div>
         </div>
       </div>
+    </div>
+    <!-- Header End Part -->
 
-      <!-- Post Section -->
-      <div class="flex-container">
-        <div class="flex-item-left">
-          <!-- card 1 -->
-
-          <div class="row cardstyle" style="margin-left: 15px">
-            <div class="col-sm-2 justify-content-center username_block">
-              <div>
-                <div class="card">
-                  <div class="card-body username">
-                    <p class="card-text align-middle text-center">Jimi</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div style="float: right">
-              <button
-                type="button"
-                class="btn"
-                style="color: white; background-color: transparent"
-                data-toggle="modal"
-                data-target="#deletemodal"
-                data-backdrop="static"
-                data-keyboard="false"
-              >
-                <img
-                  src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png"
-                />
-              </button>
-            </div>
-            <div class="col-sm-9">
-              <div class="card">
-                <div class="card-body" style="margin-top: 5px">
-                  <h5 class="card-title titlestyle">
-                    Hello there ! This is Post 1.
-                  </h5>
-                  <span class="bodystyle"
-                    >Jimi Hendrix was arguably the greatest instrumentalist in
-                    the history of rock music.[1] Hendrix expanded the range and
-                    vocabulary of the electric guitar into areas no musician had
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              style="
-                float: right;
-                margin-top: 2px;
-                margin-left: 200px;
-                margin-right: 10px;
-              "
-            >
-              <a href="/html/post.html">
-                <img
-                  src="https://img.icons8.com/external-jumpicon-line-ayub-irawan/32/000000/external-dot-basic-ui-jumpicon-line-jumpicon-line-ayub-irawan.png"
-                />
-              </a>
-            </div>
-          </div>
-          <!-- card 1 end -->
-          <div style="margin: 10px"></div>
-          <!-- card 3 -->
-
-          <div class="row cardstyle" style="margin-left: 15px">
-            <div class="col-sm-2 justify-content-center username_block">
-              <div>
-                <div class="card">
-                  <div class="card-body username">
-                    <p class="card-text align-middle text-center">Jimi</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div style="float: right">
-              <button
-                type="button"
-                class="btn"
-                style="color: white; background-color: transparent"
-                data-toggle="modal"
-                data-target="#deletemodal"
-                data-backdrop="static"
-                data-keyboard="false"
-              >
-                <img
-                  src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png"
-                />
-              </button>
-            </div>
-            <div class="col-sm-9">
-              <div class="card">
-                <div class="card-body" style="margin-top: 5px">
-                  <h5 class="card-title titlestyle">
-                    Hello there ! This is Post 3.
-                  </h5>
-                  <span class="bodystyle"
-                    >Jimi Hendrix was arguably the greatest instrumentalist in
-                    the history of rock music.[1] Hendrix expanded the range and
-                    vocabulary of the electric guitar into areas no musician had
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              style="
-                float: right;
-                margin-top: 2px;
-                margin-left: 200px;
-                margin-right: 10px;
-              "
-            >
-              <a href="/html/post.html">
-                <img
-                  src="https://img.icons8.com/external-jumpicon-line-ayub-irawan/32/000000/external-dot-basic-ui-jumpicon-line-jumpicon-line-ayub-irawan.png"
-                />
-              </a>
-            </div>
-          </div>
-          <!-- card 3 end -->
+    <!-- Post Section -->
+    <div class="postContainer">
+      <div class="singlePost">
+        <div class="singlePostleft">
+          <p>Jimi</p>
         </div>
-        <div class="flex-item-right">
-          <!-- card 2 -->
+        <div class="singlePostright">
 
-          <div class="row cardstyle" style="margin-left: 15px">
-            <div class="col-sm-2 justify-content-center username_block">
-              <div>
-                <div class="card">
-                  <div class="card-body username">
-                    <p class="card-text align-middle text-center">Jimi</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div style="float: right">
-              <button
-                type="button"
-                class="btn"
-                style="color: white; background-color: transparent"
-                data-toggle="modal"
-                data-target="#deletemodal"
-                data-backdrop="static"
-                data-keyboard="false"
-              >
-                <img
-                  src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png"
-                />
-              </button>
-            </div>
-            <div class="col-sm-9">
-              <div class="card">
-                <div class="card-body" style="margin-top: 5px">
-                  <h5 class="card-title titlestyle">
-                    Hello there ! This is Post 2.
-                  </h5>
-                  <span class="bodystyle"
-                    >Jimi Hendrix was arguably the greatest instrumentalist in
-                    the history of rock music.[1] Hendrix expanded the range and
-                    vocabulary of the electric guitar into areas no musician had
-                  </span>
-                </div>
-              </div>
-            </div>
+          <!-- for Trash icon here -->
+          <span class="delete_icon"> <button type="button" class="btn"
+              style="color: white; background-color: transparent" data-toggle="modal" data-target="#deletemodal"
+              data-backdrop="static" data-keyboard="false">
+              <img src="/images/delete_icon.png" />
+            </button></span>
+          <p class="SinglePosttitle">Hello there ! This is Post 1. </p>
+          <p class="SinglePostdesc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock
+            music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever
+          </p>
 
-            <div
-              style="
-                float: right;
-                margin-top: 2px;
-                margin-left: 200px;
-                margin-right: 10px;
-              "
-            >
-              <a href="/html/post.html">
-                <img
-                  src="https://img.icons8.com/external-jumpicon-line-ayub-irawan/32/000000/external-dot-basic-ui-jumpicon-line-jumpicon-line-ayub-irawan.png"
-                />
-              </a>
-            </div>
-          </div>
-          <!-- card 2 end -->
-          <div style="margin: 10px"></div>
-          <!-- card 4 -->
-
-          <div class="row cardstyle" style="margin-left: 15px">
-            <div class="col-sm-2 justify-content-center username_block">
-              <div>
-                <div class="card">
-                  <div class="card-body username">
-                    <p class="card-text align-middle text-center">Jimi</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div style="float: right">
-              <button
-                type="button"
-                class="btn"
-                style="color: white; background-color: transparent"
-                data-toggle="modal"
-                data-target="#deletemodal"
-                data-backdrop="static"
-                data-keyboard="false"
-              >
-                <img
-                  src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png"
-                />
-              </button>
-            </div>
-            <div class="col-sm-9">
-              <div class="card">
-                <div class="card-body" style="margin-top: 5px">
-                  <h5 class="card-title titlestyle">
-                    Hello there ! This is Post 4.
-                  </h5>
-                  <span class="bodystyle"
-                    >Jimi Hendrix was arguably the greatest instrumentalist in
-                    the history of rock music.[1] Hendrix expanded the range and
-                    vocabulary of the electric guitar into areas no musician had
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div
-              style="
-                float: right;
-                margin-top: 2px;
-                margin-left: 200px;
-                margin-right: 10px;
-              "
-            >
-              <a href="/html/post.html">
-                <img
-                  src="https://img.icons8.com/external-jumpicon-line-ayub-irawan/32/000000/external-dot-basic-ui-jumpicon-line-jumpicon-line-ayub-irawan.png"
-                />
-              </a>
-            </div>
-          </div>
-          <!-- card 4 end -->
+          <!-- for ... icon here -->
+          <span class="dot_icon"><a href="/html/post.html"><img src="/images/dot_icon.png" /></a></span>
         </div>
-        <!-- card 5 -->
-
-        <div class="row cardstyle" style="margin-left: 15px;margin-top: 10px;">
-          <div class="col-sm-2 justify-content-center username_block">
-            <div>
-              <div class="card">
-                <div class="card-body username">
-                  <p class="card-text align-middle text-center">Jimi</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div style="float: right">
-            <button
-              type="button"
-              class="btn"
-              style="color: white; background-color: transparent"
-              data-toggle="modal"
-              data-target="#deletemodal"
-              data-backdrop="static"
-              data-keyboard="false"
-            >
-              <img
-                src="https://img.icons8.com/ios-glyphs/30/000000/filled-trash.png"
-              />
-            </button>
-          </div>
-          <div class="col-sm-9">
-            <div class="card">
-              <div class="card-body" style="margin-top: 5px">
-                <h5 class="card-title titlestyle">
-                  Hello there ! This is Post 5.
-                </h5>
-                <span class="bodystyle"
-                  >Jimi Hendrix was arguably the greatest instrumentalist in the
-                  history of rock music.[1] Hendrix expanded the range and
-                  vocabulary of the electric guitar into areas no musician had
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div
-            style="
-              float: right;
-              margin-top: 2px;
-              margin-left: 200px;
-              margin-right: 10px;
-            "
-          >
-            <a href="/html/post.html">
-              <img
-                src="https://img.icons8.com/external-jumpicon-line-ayub-irawan/32/000000/external-dot-basic-ui-jumpicon-line-jumpicon-line-ayub-irawan.png"
-              />
-            </a>
-          </div>
-        </div>
-        <!-- card 5 end -->
       </div>
 
+      <div class="singlePost">
+        <div class="singlePostleft">
+          <p>Jimi</p>
+        </div>
+        <div class="singlePostright">
+
+          <!-- for Trash icon here -->
+          <span class="delete_icon"> <button type="button" class="btn"
+              style="color: white; background-color: transparent" data-toggle="modal" data-target="#deletemodal"
+              data-backdrop="static" data-keyboard="false">
+              <img src="/images/delete_icon.png" />
+            </button></span>
+          <p class="SinglePosttitle">Hello there ! This is Post 2. </p>
+          <p class="SinglePostdesc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock
+            music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever
+          </p>
+
+          <!-- for ... icon here -->
+          <span class="dot_icon"><a href="/html/post.html"><img src="/images/dot_icon.png" /></a></span>
+
+        </div>
+      </div>
+
+
+      <div class="singlePost">
+        <div class="singlePostleft">
+          <p>Jimi</p>
+        </div>
+        <div class="singlePostright">
+
+          <!-- for Trash icon here -->
+          <span class="delete_icon"> <button type="button" class="btn"
+              style="color: white; background-color: transparent" data-toggle="modal" data-target="#deletemodal"
+              data-backdrop="static" data-keyboard="false">
+              <img src="/images/delete_icon.png" />
+            </button></span>
+          <p class="SinglePosttitle">Hello there ! This is Post 3. </p>
+          <p class="SinglePostdesc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock
+            music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever
+          </p>
+
+          <!-- for ... icon here -->
+          <span class="dot_icon"><a href="/html/post.html"><img src="/images/dot_icon.png" /></a></span>
+
+        </div>
+      </div>
+      <div class="singlePost">
+        <div class="singlePostleft">
+          <p>Jimi</p>
+        </div>
+        <div class="singlePostright">
+
+          <!-- for Trash icon here -->
+          <span class="delete_icon"> <button type="button" class="btn"
+              style="color: white; background-color: transparent" data-toggle="modal" data-target="#deletemodal"
+              data-backdrop="static" data-keyboard="false">
+              <img src="/images/delete_icon.png" />
+            </button></span>
+          <p class="SinglePosttitle">Hello there ! This is Post 4. </p>
+          <p class="SinglePostdesc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock
+            music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever
+          </p>
+
+          <!-- for ... icon here -->
+          <span class="dot_icon"><a href="/html/post.html"><img src="/images/dot_icon.png" /></a></span>
+
+        </div>
+      </div>
+      <div class="singlePost" style="left: 25%;">
+        <div class="singlePostleft">
+          <p>Jimi</p>
+        </div>
+        <div class="singlePostright">
+
+          <!-- for Trash icon here -->
+          <span class="delete_icon"> <button type="button" class="btn"
+              style="color: white; background-color: transparent" data-toggle="modal" data-target="#deletemodal"
+              data-backdrop="static" data-keyboard="false">
+              <img src="/images/delete_icon.png" />
+            </button></span>
+          <p class="SinglePosttitle">Hello there ! This is Post 5. </p>
+          <p class="SinglePostdesc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock
+            music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever
+          </p>
+
+          <!-- for ... icon here -->
+          <span class="dot_icon"><a href="/html/post.html"><img src="/images/dot_icon.png" /></a></span>
+
+        </div>
+      </div>
       <!-- Post section end -->
     </div>
 
@@ -541,21 +280,13 @@
 
             <div class="modal-body">
               <div style="text-align: center">
-                <button
-                  type="submit"
-                  class="btn btn-default"
-                  style="background-color: red; color: white; width: 100px"
-                  data-dismiss="modal"
-                >
+                <button type="submit" class="btn btn-default" style="background-color: red; color: white; width: 100px"
+                  data-dismiss="modal">
                   Yes
                 </button>
 
-                <button
-                  type="submit"
-                  class="btn btn-default"
-                  style="background-color: #0ec038; color: white; width: 100px"
-                  data-dismiss="modal"
-                >
+                <button type="submit" class="btn btn-default"
+                  style="background-color: #0ec038; color: white; width: 100px" data-dismiss="modal">
                   No
                 </button>
               </div>
@@ -564,5 +295,6 @@
         </div>
       </div>
     </div>
-  </body>
+</body>
+
 </html>
