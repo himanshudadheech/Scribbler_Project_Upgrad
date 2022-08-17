@@ -1,9 +1,13 @@
 // For adding comments
 function addComments(id) {
+  document.getElementById("viewComments").style.visibility = "visible";
   var addEventName = id.value + "<br>";
   var a = document.getElementById("userComments");
-  document.getElementById("addEventNames").innerHTML +=
-    "<p>" + addEventName + "</p>";
+  document.getElementById("addEventNames").innerHTML =
+    '<p style="padding:10px;background-color:white;">' +
+    addEventName +
+    "</p>" +
+    document.getElementById("addEventNames").innerHTML;
   a.value = a.defaultValue;
 }
 //  For liked count
@@ -33,6 +37,7 @@ function postEdit() {
   if (editMode == false) {
     title.contentEditable = true;
     paragraph.contentEditable = true;
+
     edit_button.innerHTML = "Save " + `<i class="fa fa-save"></i>`;
     editMode = true;
   } else {

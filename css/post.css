@@ -47,15 +47,13 @@ html {
   text-align: left;
 }
 
-#addEventNames {
-  border-color: grey;
-  padding: 10px;
-  color: black;
-  background-color: white;
-  border-width: 18px;
-  border-style: solid;
-}
-
 .dot-icon {
   width: 100px;
+}
+#viewComments {
+  width: 100%;
+  background-color: darkgray;
+  padding: 10px;
+  visibility: hidden;
+  margin-bottom: 30px;
 }
