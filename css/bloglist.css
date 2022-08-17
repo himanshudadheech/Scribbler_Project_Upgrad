@@ -1,86 +1,82 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body,
-html {
-  height: 100%;
-  margin: 0;
-}
-
-.bg {
-  background-color: rgb(255, 187, 0);
-  height: 100%;
-  overflow: hidden;
+.body {
+  background-color: orange;
+  height: 510px;
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.postContainer {
-  height: 100%;
+/* CSS For Post Cards*/
+
+.ListOfPost {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
+  background-color: orange;
 }
 
-.singlePost {
-  position: relative;
-  width: 45%;
-  background: #fff;
-  margin: 10px 10px 10px 20px;
+.Post {
+  background-color: white;
+  display: flex;
+  height: 170px;
+  box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2),
+    0 4px 20px 0 rgba(79, 19, 97, 0.19);
+  margin: 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  height: 80%;
+}
+
+.PostAuthorName {
+  display: flex;
   float: left;
-  border-radius: 15px;
-}
-
-.singlePostleft {
+  background-color: white;
+  align-items: center;
+  padding: 30px;
+  border: 2px solid white;
+  border-radius: 20px;
   width: 15%;
-  height: 18%;
-  max-width: 15%;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  font-weight: bold;
-  color: #000;
 }
 
-.singlePostright {
-  width: 75%;
-  display: table-cell;
-  text-align: left;
-  background-color: #e8e8e8;
-  color: #000000;
-  border-radius: 0 15px 15px 0;
-  padding: 0 20px;
+.postTitle {
+  font-weight: 700;
+  font-size: 130%;
+}
+
+.PostButton {
+  width: 100%;
+  display: flex;
+  float: right;
+  background-color: #f0f0f0;
+  flex-direction: column;
+  padding: 30px;
+  border: 2px solid #f0f0f0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+}
+.postUsername {
+  font-weight: 500;
+}
+.postDesccription {
   overflow: hidden;
 }
 
-.SinglePosttitle {
-  font-family: "Itim", cursive;
-  font-weight: bold;
-  color: #2b312b;
-  font-size: 25px;
-  height: 25px;
-  margin-top: 25px;
+.PostButton span i {
+  float: right;
 }
 
-.SinglePostdesc {
-  height: 100px;
-  margin-bottom: 0 !important;
+a:hover {
+  cursor: pointer;
 }
 
-.delete_icon {
-  position: absolute;
-  right: 5px;
-  top: 5px;
+.icons a {
+  text-decoration: none;
 }
 
-.dot_icon {
-  position: absolute;
-  right: 15px;
-  bottom: 15px;
-}
-
-.delete_icon img {
-  height: 30px;
-  width: 30px;
+.icons:hover {
+  cursor: pointer;
 }
